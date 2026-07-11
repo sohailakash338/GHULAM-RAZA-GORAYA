@@ -1,30 +1,173 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Multan Express</title>
-<link rel="stylesheet" href="style.css">
+<title>Naya Express Media Group | Verification Portal </title>
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<meta property="og:title" content="Naya Express Media Group | Verification Portal">
+<meta property="og:description" content="Verify Naya Express Press Card and Membership">
+<meta property="og:image" content="https://sohailakash338.github.io/NAYA-EXPRESS-MEDIA-GROUP-PRESS-CARD/logo.jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="1000">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sohailakash338.github.io/NAYA-EXPRESS-MEDIA-GROUP-PRESS-CARD/">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',Arial,sans-serif;background:#060606;color:#fff;min-height:100vh}
+.container{max-width:700px;margin:0 auto;padding:25px 20px 60px}
+.top-bar{display:flex;justify-content:space-between;align-items:center;padding:20px 0 40px}
+.logo-box{display:flex;align-items:center;gap:16px}
+.logo{width:58px;height:58px;background:linear-gradient(135deg,#1a3a52 0%,#0d2438 100%);border-radius:12px;display:flex;align-items:center;justify-content:center;border:3px solid #f4b400;box-shadow:0 0 25px rgba(244,180,0,0.4);padding:6px}
+.logo img{width:100%;height:100%;object-fit:contain}
+.logo-text h3{font-size:21px;font-weight:800;color:#fff;letter-spacing:0.5px}
+.logo-text p{font-size:11px;color:#00ff88;letter-spacing:2px;margin-top:3px;font-weight:600}
+.secure{display:flex;align-items:center;gap:8px;color:#00ff88;font-size:13px;font-weight:700}
+.main-title{text-align:center;color:#777;letter-spacing:5px;font-size:13px;margin-bottom:8px;font-weight:700}
+.member{text-align:center;font-size:15px;color:#aaa;margin-bottom:12px;font-weight:600;letter-spacing:2px}
+h1{text-align:center;font-size:52px;color:#00ff88;font-weight:800;margin-bottom:18px;text-shadow:0 0 35px rgba(0,255,136,0.6);letter-spacing:2px}
+.desc{text-align:center;color:#999;font-size:16px;line-height:1.8;max-width:520px;margin:0 auto 50px}
+.verify-box{background:linear-gradient(135deg, rgba(12,25,15,0.98) 0%, rgba(8,15,10,0.98) 100%);border:2.5px solid rgba(0,255,136,0.6);border-radius:22px;padding:45px 35px;box-shadow:0 0 50px rgba(0,255,136,0.2);margin-bottom:70px}
+.label-green{color:#00ff88;font-size:14px;font-weight:800;letter-spacing:3px;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.label-green::before{content:"";width:5px;height:22px;background:#00ff88;border-radius:3px;box-shadow:0 0 12px #00ff88}
+input{width:100%;background:#080808;border:2.5px solid #1a2a1a;border-radius:16px;padding:22px;color:#fff;font-size:18px;text-align:center;margin-bottom:22px;font-family:'Poppins';letter-spacing:2px;font-weight:600}
+.verify-btn{width:100%;background:transparent;border:3px solid #ffb400;color:#ffb400;padding:22px;border-radius:16px;font-size:19px;font-weight:800;cursor:pointer;letter-spacing:3px}
+.verify-btn:hover{background:#ffb400;color:#000}
+.press-card{background:linear-gradient(135deg,#0a3d62 0%,#1e6091 100%);border-radius:28px;border:6px solid #f4b400;box-shadow:0 0 60px rgba(244,180,0,0.5);margin-top:35px;display:none;overflow:hidden;max-width:580px;margin-left:auto;margin-right:auto}
+.card-header{background:#f4b400;color:#0a3d62;text-align:center;padding:25px;font-weight:800;font-size:26px}
+.sub-header{text-align:center;padding:18px;background:#0a3d62;font-size:22px;border-bottom:5px solid #f4b400;font-weight:700;color:#fff}
+.status-bar{background:#28a745;color:#fff;text-align:center;padding:18px;font-weight:800;font-size:20px}
+.card-body{padding:45px 40px;line-height:3.2;font-size:20px;color:#fff;text-align:left}
+.photo-section{display:flex; flex-direction:column; gap:25px; margin-bottom:30px; align-items:center}
+.photo-box{width:100%;max-width:480px;border:6px solid #f4b400;border-radius:18px;overflow:hidden;background:#fff}
+.photo-box img{width:100%;height:auto;display:block}
+.photo-title{text-align:center; font-size:18px; font-weight:800; color:#f4b400; margin-top:10px; margin-bottom:15px}
+.label{font-weight:800;color:#f4b400;display:inline-block;width:160px;font-size:20px}
+.chief-section{padding-top:30px;margin-top:25px;border-top:4px solid rgba(244,180,0,0.5);text-align:center;font-size:18px}
+.chief-title{color:#f4b400;font-weight:800;margin-bottom:6px;font-size:19px}
+.footer{text-align:center;padding:20px;background:#000;font-size:16px;color:#ccc;border-top:5px solid #f4b400;font-weight:700}
+.appointment-wrap{max-width:580px; margin:40px auto; background:#0a3d62; border:4px solid #f4b400; padding:30px; border-radius:20px}
+.app-head{text-align:center; font-size:30px; color:#f4b400; font-weight:800; margin-bottom:20px; direction:rtl}
+.app-content{text-align:center; direction:rtl; font-size:22px; line-height:2.2; color:#fff}
+.app-post{background:#f4b400; color:#0a3d62; padding:8px 20px; display:inline-block; font-weight:800; border-radius:8px; margin:10px 0}
+.app-note{text-align:center; direction:rtl; font-size:18px; margin:20px 0}
+.app-yellow{background:#f4b400; color:#0a3d62; padding:15px; font-size:20px; font-weight:800; border-radius:10px; text-align:center; direction:rtl}
+.app-letter-box{margin:20px 0}
+.app-letter-box img{width:100%; border:3px solid #f4b400; border-radius:15px}
+.note-white{background:#000; color:#fff; padding:20px; border-radius:10px; font-size:17px; font-weight:700; text-align:center; direction:rtl; line-height:2; margin-top:20px}
+</style>
 </head>
 <body>
-<header>
-<h1>DAILY MULTAN EXPRESS</h1>
-<p>سچ کی رفتار</p>
-</header>
 
-<main>
-<h2>خوش آمدید</h2>
-<p>یہ ڈیلی ملتان ایکسپریس کی نمونہ ویب سائٹ ہے۔</p>
+<div class="container">
+<div class="top-bar">
+    <div class="logo-box">
+        <div class="logo"><img src="logo.jpg" alt="NEX Logo"></div>
+        <div class="logo-text">
+            <h3>Naya Express Media Group</h3>
+            <p>VOICE OF TRUTH. STRENGTH OF NATION</p>
+        </div>
+    </div>
+    <div class="secure">Secure Verification</div>
+</div>
 
-<h3>ادارے کی معلومات</h3>
-<p>یہاں آپ ادارے، نمائندگان، پریس کارڈ ویریفکیشن اور رابطہ معلومات شامل کر سکتے ہیں۔</p>
+<div class="main-title">NAYA EXPRESS MEDIA GROUP</div>
+<div class="member">MEMBER</div>
+<h1>VERIFICATION</h1>
+<p class="desc">Instantly verify the authenticity of any Naya Express press card or membership credential.</p>
 
-<h3>پریس کارڈ ویریفکیشن</h3>
-<p>اس صفحے کو QR کوڈ کے ساتھ منسلک کیا جا سکتا ہے۔</p>
-</main>
+<div class="verify-box" id="verifyBox">
+    <div class="label-green">ENTER CNIC NUMBER</div>
+    <input type="text" id="cardNo" placeholder="Enter your CNIC number">
+    <button class="verify-btn" onclick="verifyCard()">VERIFY NOW »</button>
+</div>
 
-<footer>
-<p>© Daily Multan Express</p>
-</footer>
+<!-- CARD 1: Ghulam Raza Goraya -->
+<div class="press-card" id="card_g">
+    <div class="card-header">NAYA EXPRESS MEDIA GROUP</div>
+    <div class="sub-header">DAILY NAYA EXPRESS</div>
+    <div class="status-bar">✓ Status: Active</div>
+    <div class="card-body">
+        <div class="photo-section">
+            <div><div class="photo-box"><img src="g1.jpg" alt="Press Card"></div><div class="photo-title">Press Card</div></div>
+            <div><div class="photo-box"><img src="g2.jpg" alt="Authority Letter"></div><div class="photo-title">Authority Letter</div></div>
+        </div>
+        <div><span class="label">Name:</span> Ghulam Raza Goraya</div>
+        <div><span class="label">Designation:</span> Chief Executive Officer (CEO)</div>
+        <div><span class="label">District:</span> Jhang</div>
+        <div><span class="label">Valid Until:</span> 31-12-2026</div>
+        <div class="chief-section"><div class="chief-title">Head Office</div><div>Tehsil & District Jhang<br>Sargodha Road, Chund Bharwana<br>0346-7792566 | 0346-7242941</div></div>
+    </div>
+    <div class="footer">This card is for identification purpose only | Naya Express Media Group</div>
+</div>
+<div class="appointment-wrap" id="app_g">
+    <div class="app-head">سرٹیفکیٹ آف اتھارٹی</div>
+    <div class="app-content">
+        <p>یہ تصدیق کی جاتی ہے کہ غلام رضا گرایا</p>
+        <div class="app-post">چیف ایگزیکٹو آفیسر CEO</div>
+        <p>کو ڈیلی نیا ایکسپریس لاہور/اسلام آباد کا با اختیار نمائندہ مقرر کیا گیا ہے</p>
+    </div>
+    <div class="app-letter-box"><img src="g3.jpg" alt="Authority Letter"></div>
+    <div class="note-white">نوٹ: جس شناختی کارڈ کا سٹیٹس "Active" نہیں ہوگا وہ ادارے سے منسلک نہیں ہے۔<br>کسی بھی شک کی صورت میں ادارے سے رابطہ کریں۔</div>
+</div>
+
+<!-- CARD 2: Rais Ahmed Minhas -->
+<div class="press-card" id="card_r">
+    <div class="card-header">NAYA EXPRESS NEWS HD</div>
+    <div class="sub-header">DAILY NAYA EXPRESS</div>
+    <div class="status-bar">✓ Status: Active</div>
+    <div class="card-body">
+        <div class="photo-section">
+            <div><div class="photo-box"><img src="r1.jpg" alt="Press Card"></div><div class="photo-title">Press Card</div></div>
+            <div><div class="photo-box"><img src="r2.jpg" alt="Authority Letter"></div><div class="photo-title">Authority Letter</div></div>
+        </div>
+        <div><span class="label">Name:</span> Rais Ahmed Minhas</div>
+        <div><span class="label">Designation:</span> CEO / Authorized Representative</div>
+        <div><span class="label">District:</span> Jhang</div>
+        <div><span class="label">Valid Until:</span> 31-12-2026</div>
+        <div class="chief-section"><div class="chief-title">Head Office</div><div>Tehsil & District Jhang<br>Sargodha Road, Chund Bharwana<br>0346-7792566 | 0346-7242941</div></div>
+    </div>
+    <div class="footer">This card is for identification purpose only | Naya Express News HD</div>
+</div>
+<div class="appointment-wrap" id="app_r">
+    <div class="app-head">سرٹیفکیٹ آف اتھارٹی</div>
+    <div class="app-content">
+        <p>یہ تصدیق کی جاتی ہے کہ رئیس احمد منہاس</p>
+        <div class="app-post">سی ای او / با اختیار نمائندہ</div>
+        <p>کو نیا ایکسپریس نیوز ایچ ڈی کا با اختیار نمائندہ مقرر کیا گیا ہے</p>
+    </div>
+    <div class="app-letter-box"><img src="r3.jpg" alt="Authority Letter"></div>
+    <div class="note-white">نوٹ: جس شناختی کارڈ کا سٹیٹس "Active" نہیں ہوگا وہ ادارے سے منسلک نہیں ہے۔<br>کسی بھی شک کی صورت میں ادارے سے رابطہ کریں۔</div>
+</div>
+
+</div>
+
+<script>
+const members = {
+    "33202-3211081-7": {card: "card_g", app: "app_g"}, // Ghulam Raza Goraya
+    "33102-1234567-8": {card: "card_r", app: "app_r"} // Rais Ahmed Minhas - CNIC change kar dein
+};
+
+function verifyCard(){
+    let no = document.getElementById('cardNo').value.trim();
+    document.getElementById('card_g').style.display = 'none';
+    document.getElementById('app_g').style.display = 'none';
+    document.getElementById('card_r').style.display = 'none';
+    document.getElementById('app_r').style.display = 'none';
+    
+    if(members[no]){
+        document.getElementById('verifyBox').style.display = 'none';
+        document.getElementById(members[no].card).style.display = 'block';
+        document.getElementById(members[no].app).style.display = 'block';
+        window.scrollTo(0,0);
+    } else if(no == ""){
+        alert('Please enter CNIC number first');
+    } else {
+        alert('Invalid CNIC Number!');
+    }
+}
+</script>
+
 </body>
 </html>
